@@ -17,7 +17,7 @@ DUMMY_PRODUCTS = [
         "discount_rate": 20,
         "badge": "BEST",
         "badge_color": "danger",
-        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80",
+        "image_url": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?auto=format&fit=crop&w=800&q=80",
         "description": "실버 대거 메탈 버튼 포인트와 딥 블랙 스웨이드 텍스처가 돋보이는 럭셔리 고딕 자켓입니다.",
         "rating": 4.9,
         "reviews_count": 128
