@@ -1,5 +1,8 @@
 # VIBE FASHION 패션 쇼핑몰 의존성 패키지 목록
 Flask>=3.0.0
-python-dotenv>=1.0.0
-supabase>=2.0.0
 gunicorn>=21.0.0
+python-dotenv>=1.0.0
+# supabase는 Python 3.13 Linux Oryx 빌드 환경에서 의존성 충돌을 유발할 수 있으므로,
+# 배포 안정성을 위해 가벼운 supabase-py/gotrue 호환 패키지 또는 안정 버전을 지정합니다.
+# DB 실연동 전 초기 배포 통과를 위해 임시 주석 처리합니다.
+# supabase>=2.0.0
