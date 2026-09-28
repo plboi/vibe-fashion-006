@@ -10,15 +10,15 @@ main_bp = Blueprint("main", __name__)
 DUMMY_PRODUCTS = [
     {
         "id": 1,
-        "name": "클래식 오버핏 싱글 자켓",
+        "name": "Classic Overfit Suede Jacket",
         "category": "OUTER",
         "price": 128000,
         "original_price": 160000,
         "discount_rate": 20,
         "badge": "BEST",
         "badge_color": "danger",
-        "image_url": "https://picsum.photos/id/1059/600/750",
-        "description": "자연스러운 실루엣과 고급스러운 텍스처의 프리미엄 데일리 오버핏 자켓입니다.",
+        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80",
+        "description": "실버 대거 메탈 버튼 포인트와 딥 블랙 스웨이드 텍스처가 돋보이는 럭셔리 고딕 자켓입니다.",
         "rating": 4.9,
         "reviews_count": 128
     },
