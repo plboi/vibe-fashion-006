@@ -31,12 +31,104 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 /* ==========================================================
-   히어로 섹션 (Hero Section) 스타일
+   히어로 섹션 (Hero Section) 스타일 - Chrome Hearts 감성
 ========================================================== */
 .hero-section {
-    /* 어두운 패션 감성의 그라데이션 배경 */
-    background: linear-gradient(135deg, #11141a 0%, #1c2331 50%, #2b3a4a 100%);
-    min-height: 520px;
+    min-height: 560px;
+}
+
+.ch-gothic-hero {
+    /* 딥 블랙, 그런지 질감 및 실버 메탈릭 대비 */
+    background: radial-gradient(circle at center, #18181a 0%, #0c0c0d 65%, #050505 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ch-vignette-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.8) 100%),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 2px);
+    pointer-events: none;
+}
+
+.ch-cross-symbol {
+    font-size: 2.2rem;
+    color: #d1d5db;
+    letter-spacing: 0.3em;
+    opacity: 0.85;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.ch-sub-badge {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.45em;
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+.ch-hero-title {
+    font-family: 'Cinzel', 'Cinzel Decorative', serif;
+    font-weight: 900;
+    letter-spacing: 0.22em;
+    color: #f3f4f6;
+    text-transform: uppercase;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 255, 255, 0.1);
+    line-height: 1.2;
+}
+
+.ch-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.ch-divider::before,
+.ch-divider::after {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.ch-btn-primary {
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.25em;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.ch-btn-primary:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.ch-btn-outline {
+    background: transparent;
+    color: #e5e7eb;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.25em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.ch-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 .hero-title {
@@ -116,6 +208,95 @@ h1, h2, h3, h4, .navbar-brand {
     background-color: #11141a;
     border-color: #11141a;
     color: #fff;
+}
+
+/* ==========================================================
+   크롬하츠 고딕 다크 테마 - 상품 섹션 (Products Section)
+========================================================== */
+.ch-products-section {
+    background: radial-gradient(circle at center, #141416 0%, #0a0a0b 70%, #050505 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ch-section-title {
+    font-family: 'Cinzel', 'Cinzel Decorative', serif;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.ch-cross-small {
+    font-size: 1.5rem;
+    color: #9ca3af;
+    opacity: 0.8;
+}
+
+.ch-card {
+    background: #0d0d0f !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ch-card:hover {
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.08) !important;
+}
+
+.ch-badge {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.15em;
+    font-size: 0.7rem;
+}
+
+.ch-img {
+    filter: grayscale(35%) contrast(110%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.ch-card:hover .ch-img {
+    filter: grayscale(0%) contrast(100%);
+    transform: scale(1.06);
+}
+
+.ch-wishlist-btn {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ch-wishlist-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+.ch-card-category {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: #9ca3af;
+}
+
+.ch-cart-btn {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.2em;
+    font-size: 0.78rem;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #e5e7eb !important;
+    transition: all 0.25s ease;
+}
+
+.ch-cart-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
 /* ==========================================================
