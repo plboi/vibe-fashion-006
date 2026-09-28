@@ -160,43 +160,6 @@
         </div>
     </div>
 </section>
-                        <p class="card-text text-secondary text-xs mb-3 flex-grow-1 line-clamp-2">
-                            {{ item.description }}
-                        </p>
-
-                        <!-- 평점 및 리뷰 수 -->
-                        <div class="d-flex align-items-center mb-2 small text-warning">
-                            <i class="bi bi-star-fill me-1"></i>
-                            <span class="fw-bold text-dark me-1">{{ item.rating }}</span>
-                            <span class="text-muted text-xs">({{ item.reviews_count }})</span>
-                        </div>
-
-                        <!-- 가격 표시 -->
-                        <div class="d-flex align-items-baseline gap-2 mb-3">
-                            <span class="fw-bolder fs-5 text-dark">
-                                {{ "{:,}".format(item.price) }}원
-                            </span>
-                            {% if item.discount_rate > 0 %}
-                            <span class="text-decoration-line-through text-muted small">
-                                {{ "{:,}".format(item.original_price) }}원
-                            </span>
-                            <span class="text-danger fw-bold small">
-                                {{ item.discount_rate }}%
-                            </span>
-                            {% endif %}
-                        </div>
-
-                        <!-- 장바구니 담기 버튼 -->
-                        <button class="btn btn-outline-dark btn-sm w-100 py-2 rounded-2 fw-semibold add-to-cart-btn" onclick="alert('\'{{ item.name }}\' 상품이 장바구니에 담겼습니다!')">
-                            <i class="bi bi-bag-plus me-1"></i> 장바구니 담기
-                        </button>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
 <!-- ====================================================
      4. 브랜드 스토리 섹션 (About Brand)
